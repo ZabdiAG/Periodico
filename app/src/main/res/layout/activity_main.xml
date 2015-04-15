@@ -1,0 +1,112 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="1362dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            tools:context=".Principal"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Encavesado"
+                android:text="Ultimas noticias"
+                android:layout_centerHorizontal="true"
+                android:textSize="30dp" />
+
+            <!--Noticia 1-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:id="@+id/N1"
+                android:layout_marginTop="36dp"
+                android:textStyle="italic"
+                android:textSize="29dp"
+                android:textColor="#ff791a1a"
+                android:layout_below="@+id/Encavesado"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:clickable="true"
+                android:onClick="onClick"/>
+
+            <!--Noticia 2-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:id="@+id/N2"
+                android:textStyle="italic"
+                android:textSize="29dp"
+                android:textColor="#ff791a1a"
+                android:layout_below="@+id/N1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="36dp"
+                android:clickable="true"
+                android:onClick="onClick"/>
+
+            <!--Noticia 3-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:id="@+id/N3"
+                android:textStyle="italic"
+                android:textSize="29dp"
+                android:textColor="#ff791a1a"
+                android:layout_below="@+id/N2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="38dp"
+                android:clickable="true"
+                android:onClick="onClick"/>
+
+            <!--Noticia 4-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:id="@+id/N4"
+                android:textStyle="italic"
+                android:textSize="29dp"
+                android:textColor="#ff791a1a"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:layout_below="@+id/N3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="187dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salir"
+                android:id="@+id/btnSalir"
+                android:onClick="onClick"
+                android:layout_marginTop="32dp"
+                android:layout_below="@+id/N4"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/N4"
+                android:layout_toEndOf="@+id/N4" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</ScrollView>
